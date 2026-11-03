@@ -1,0 +1,502 @@
+close
+
+close
+
+Cuenta de Google
+jose luis mayor monzón
+abogado.joseluismayormonzon@gmail.com
+
+info
+Este cuaderno está abierto con resultados privados. Los resultados no se
+guardarán. Puedes inhabilitar esta opción en Configuración del cuaderno
+<#>.
+close
+
+info
+Tu versión de Colab está obsoleta. Actualiza la página para obtener las
+últimas novedades.
+Actualiza para verlas
+
+ iabd_ut01_tarea1.ipynb. _
+
+star
+
+Archivo
+ 
+Editar
+ 
+Ver
+ 
+Insertar
+ 
+Entorno de ejecución
+ 
+Herramientas
+ 
+Ayuda
+ 
+
+comment
+
+settings
+
+lock
+
+Compartir
+
+spark
+
+Gemini
+<https://accounts.google.com/SignOutOptions?hl=es&continue=https://
+colab.research.google.com/
+drive/1BUWDFz91gh0rruLmBn78FkhgUEqrZDzc&ec=GBRAqQM>
+Comandos
+
+Código
+
+arrow_drop_down
+
+Texto
+
+people
+
+settings
+
+expand_less
+
+expand_more
+
+format_list_bulleted
+
+find_in_page
+
+code
+
+eye_tracking
+
+vpn_key
+
+folder
+
+table
+
+
+      Índice
+
+tab
+
+close
+
+JOSE LUIS MAYOR MONZON <#scrollTo=JOSE_LUIS_MAYOR_MONZON>
+play_arrow
+
+more_vert
+
+add
+
+Sección
+
+Cuaderno
+
+more_vert
+
+close
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+keyboard_arrow_down
+
+
+  JOSE LUIS MAYOR MONZON
+
+subdirectory_arrow_right
+
+11 celdas ocultas
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+(0,5 puntos) Borra la celda actual, añade una nueva de texto y escribe
+en su interior tu nombre completo en Heading 1.
+
+subdirectory_arrow_right
+
+0 celdas ocultas
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+tenistas = ["Novak Djokovic", "Rafael Nadal", "Roger Federer", "Pete Sampras", "Roy Emerson"]
+Grand_Slams = [24, 22, 20, 20, 14, 12]
+print(tenistas)
+print(Grand_Slams)
+
+['Novak Djokovic', 'Rafael Nadal', 'Roger Federer', 'Pete Sampras', 'Roy Emerson']
+[24, 22, 20, 20, 14, 12]
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+(1,0 puntos) En una nueva celda de código, crea un diccionario de nombre
+dic donde la clave de cada elemento sea el nombre de un tenista y su
+valor el número de Grand Slams ganados. Imprime por pantalla el diccionario.
+
+subdirectory_arrow_right
+
+0 celdas ocultas
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+# crear el diccionario dic
+dic = dict(zip(tenistas, Grand_Slams))
+print(dic)
+
+{'Novak Djokovic': 24, 'Rafael Nadal': 22, 'Roger Federer': 20, 'Pete Sampras': 20, 'Roy Emerson': 14}
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+(2,0 puntos) Crea una función de nombre get_tenistas que reciba como
+parámetro el diccionario dic y muestre los datos del diccionario en la
+forma Nombre del jugador: X Grand Slams ganados. El resultado debería
+ser como sigue: Novak Djokovic: 24 Grand Slams ganados. Rafael Nadal: 22
+Grand Slams ganados.
+
+subdirectory_arrow_right
+
+0 celdas ocultas
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+# funcion get_tenistas
+def get_tenistas(dict):
+    for nombre in dic:
+      print (f"{nombre} ha ganado {dic[nombre]} Grand Slams")
+
+
+
+get_tenistas(dic)
+
+
+Novak Djokovic ha ganado 24 Grand Slams
+Rafael Nadal ha ganado 22 Grand Slams
+Roger Federer ha ganado 20 Grand Slams
+Pete Sampras ha ganado 20 Grand Slams
+Roy Emerson ha ganado 14 Grand Slams
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+(2,0 puntos) Define la clase Pais con un "constructor" que inicialice
+los atributos nombre, capital e idioma, que serán los datos a considerar
+en la clase. Dentro de ella, crea los métodos get_nombre, get_capital y
+get_idioma, que devolverán el nombre del país, su capital y el idioma
+hablado, respectivamente. A continuación, crea una instancia u objeto de
+la clase Pais, asignándole los datos que desees, y haz uso de los
+métodos implementados para mostrar un mensaje con la información almacenada.
+
+subdirectory_arrow_right
+
+0 celdas ocultas
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+
+# clase Pais
+class Pais:
+
+  def __init__(self, nombre, capital, idioma):
+    self.nombre = nombre
+    self.capital = capital
+    self.idioma = idioma
+
+  def get_nombre(self):
+    return self.nombre
+
+  def get_capital(self):
+    return self.capital
+
+  def get_idioma(self):
+    return self.idioma
+
+
+# crear objeto de la clase pais
+Pais1 = Pais ( "España", "Madrid", "Español")
+Pais2 = Pais ( "Francia", "Paris", "Frances")
+Pais3 = Pais ( "Italia", "Roma", "Italiano")
+
+# ahora mostramos la informacion
+print(Pais1.get_nombre())
+print(Pais1.get_capital())
+print(Pais1.get_idioma())
+
+print(Pais2.get_nombre())
+print(Pais2.get_capital())
+print(Pais2.get_idioma())
+
+print(Pais3.get_nombre())
+print(Pais3.get_capital())
+print(Pais3.get_idioma())
+
+
+España
+Madrid
+Español
+Francia
+Paris
+Frances
+Italia
+Roma
+Italiano
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+format_size
+
+format_bold
+
+format_italic
+
+code
+
+link
+
+image
+
+format_quote
+
+format_list_numbered
+
+format_list_bulleted
+
+horizontal_rule
+
+ψ
+mood
+
+Cerrar
+
+Haz doble clic (o pulsa Intro) para editar
+
+subdirectory_arrow_right
+
+0 celdas ocultas
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+spark Gemini
+
+add
+
+Código
+
+add
+
+Texto
+
+------------------------------------------------------------------------
+
+more_vert
+
+close
+
+more_vert
+
+close
+
+more_vert
+
+close
+
+data_object
+
+Variables
+
+terminal
+
+Terminal
+
+Buscar en Drive
+Abrir en modo de ensayo
+Cuaderno nuevo en Drive
+Abrir cuadernoCtrl+O
+Buscar cuadernos en Drive (se abre en una nueva pestaña)
+Subir cuaderno
+Cambiar nombre
+Mover
+Mover a la papelera
+Guardar una copia en Drive
+Guardar una copia como Gist de GitHub
+Guardar una copia en GitHub
+Guardar una copia con VS Code
+GuardarCtrl+S
+Guardar y fijar revisiónCtrl+M S
+Historial de revisiones
+Información de cuaderno
+Descargar ►
+ImprimirCtrl+P
+Descargar .ipynb
+Descargar .py
+Deshacer
+Rehacer
+Seleccionar todas las celdas
+Cortar celda o selección
+Copiar celda o selección
+Pegar
+Eliminar celdas seleccionadas
+Buscar y reemplazar
+Buscar siguiente
+Buscar anterior
+Configuración del cuaderno
+Borrar todos los resultados
+check
+Índice
+Historial de código ejecutado
+Iniciar presentación
+Iniciar presentación desde el principio
+Comentarios ►
+Ocultar secciones
+Mostrar secciones
+Guardar diseño de secciones ocultas
+Mostrar u ocultar el código
+Mostrar u ocultar resultado
+Fijar la pestaña siguiente
+Fijar la pestaña anterior
+Mover pestaña al siguiente panel
+Mover pestaña al panel anterior
+Ocultar comentarios
+Minimizar comentarios
+Desplegar comentarios
+Celda de código
+Celda de texto
+Celda de encabezado de sección
+Celda de código temporal
+Fragmentos de código
+Añadir un campo de formulario
+Ejecutar todas
+Ejecutar anteriores
+Ejecutar celda seleccionada
+Ejecutar selección
+Ejecutar celda y las de abajo
+Interrumpir ejecución
+Reiniciar sesión
+Reiniciar sesión y ejecutar todo
+Desconectarse y eliminar entorno de ejecución
+Cambiar tipo de entorno de ejecución
+Gestionar sesiones
+Ver recursos
+Ver registros del entorno de ejecución
+Desplegar en Google Cloud Run
+Paleta de comandos
+Configuración
+Combinaciones de teclas
+Diferencias entre cuadernos (se abre en una nueva pestaña)
+Preguntas frecuentes
+Ver notas de la versión
+Buscar fragmentos de código
+Notificar un problema
+Denunciar uso inadecuado de Drive
+Enviar comentarios
+Ver términos del servicio
+Ver en inglés
+comment
+
+Añadir un comentario
+0cAFcWeA5bFOeEOu9PgwxoH_p-
+OX3GcK0fyuhOVJJ_GuT8Xe5KsMBnmxerue_zqx3I3sgFEvyMJPG32cdP-
+tIZUlLnIiXJHSNlgGCgsO1z9dHYNWIdV-
+XUiccWP6FVPw3WlBnMP1I57nJWetC2aPYCdAQN_69WCX51FP7i7h7uaI9pDWE0D9yzoCt79XWdq_HJan7Y_BF2vX8iN1ILcYetA4c9fXos53jEg3BB-IXdQsb_ORtY0yZPNhBgeil0fuepeR1sYb9sxSSwQoiJ6ACBIrDg3Vjl3NpjjqZwaM2Kn7v3Z0L8YIe2WASlkIxlCPWw_mePD-h1ul5Qgp7PhmntxYEpQ3k2YAaQ6t4bs11ga7gJK-_FtT6CEAYYUsrRLNJ0vj56CmLFMN6KTe-TcBDNe7gmyrjCJeN2d5mJ08GCr5FthQMq0mYmUXRZdU9xPeKYCs4uZzUYwep0YWDdLITxCDpXfJsYbdUSRENWXj6UB_qlRA8V_0OqwER1eWeSzmMKLmvAXd7ZzWCjNFuCKn_L2yS7Ai8X-QA61xDUdeaSt325NzQcVF40FlNGYDt68mratWECJLw1MhHusuSLfxkLWsgMn8MnKRRMzV-wTC6NLAgm6eJjGPflcI3fM1yYxNVlS1eHBtcuXs-ersxJEGBy67LhZ8gu5ddzKvyD84QwT40tMK0yyzRSJgUJtR8k14yI2TLZCO5XeSoYdrgAHOKaw6djQcnSmNO8PxgpVs2itfOQwr3LH9FshMtvp-xskUeCDNXR0zGNnat9ACZVDZ_QkN_xq2_jmjCoC46Yg-Ih_iQoMW5RYAN9lle5i2alT6CIAdNj1L6b9QIAIpXX-sz7WFcJj2OrewZ925EQjSSCmhKNmtJpTMd-iLvWpyEbRJuaCiGDNiN-b19YY6P5UCS0WAArtmjRJGQlO0jrmv8b3gBWT3EiOGJ2Ev2Jlvae9Su5D2PTvbZ3xBWdXYj0PAf3nHXEVAbAMwLX4ptTZnX5kPqGaUnFfeiV5XEOZsIb1zl4CRD9LefLCiwWDNd9oQdlhGPm5vBJPq2vPtaLJyLZaYv4R3b7KtkIxJt71MuRoB7UY2NRPlRt_mJV3yM8DGNtzJRmwV50iFzj0oZ0M5m4czH-1dFne2tGDhgm49g5FRODXer7HOYvzUWtv2QAXCvRFKScVQuGiYeuKoVcw2Z4hwhb2YISvfjQMCF1161oS3lygqRkhO3ikaFHuuXCleIIedA1l-RTLRO6hSHikiCeDH7bxe8V-RIjJi-kqiI81-A057ddmRjJmduH6cHaq1V5Iajp1igL6rSR9biI1M6UgM150YC6XngMPD4TW9V2J8iyp6RGl3J0hRSRsukoylJRT7G32MZ2tOE2J5Tmg35RmjofHMoY8yKlN8qXVbsSzNiClezDzR7kjIaGr70HkOeJwu5qLbf59MdlLCkP74hsXllAuxLCchfoR-pfHEz1ce-clPZMmXW_0PD2AStF1EpJBJwz5jubn0G7-HNluWg5-v67teNb2wT8u6tLl2cIC_0f9j1PwQyaCV3aii7RxZIOz4rpN0-lZh-4Xyy8msrQ6Qtmh4DOfeXI3Xtlh20xzxISWzpyphGhYJ3azNXu7v82drSKn63Ss6OvTUDyRZ4uxeLs_GT7FLSpE9GLOQ8G97hmfhzglgbtR57QYgyR37qNu_AoHQ0PgF4aH21mycqE3OwLwKQ6b_i6_Q0cDcfQ1YUGzJUVUmx76cx7KoAnoNu9cCpqDeHLWngVs9yIDa-i0o3OAlSb6Wrbfji34EqJy7j0qhf8FS_kFVLwi4afb2XDhVkQe-HLMli6QClKhn_A3uw2GMUiDS98ULoOMsku4J-v0A2f0QIL8Aa9xGta3EmrXQBsZs8_JSsSJBudQe3j_hFfQxa6P8J10CvbPi4MzKT3f62cCPODUDPsJJ3bUuw03lNix2yrLB9XALfk2v7WIHUJwhT39ISvNQoIOen5cZDgWPa6jKRbulTR-9oKa0nNrC2IDh-pN7tlvTxOq6kJ-gIex_u5P1RliaYLp_8PSenOvE4Oeiax1iTTVTh9wIxSg0ecETrDBicgCqZm19nZ0VrXJosrfnqgMVydudt2XmU_quAoeDz6mgsXngZwjPo4gVWXCdgi3a0f-Kvfr0hrMz-IgYh7b6XtqDRG8leTjNWhunnT1_gUgwsCbq6yFF-wn9xAn2SUHPcEP8mqaMyl_yXqk_5J3jraSZ964FODGR5fTqVACIuNXh4ZGXCQAvA88__pjdzOhZ42-uD3DtIjpHgPTOsUm_pbs5GwbPRDqIOpMrhej1CEdnytttlJtBp6z_uZbW73TJ4_8w
